@@ -168,7 +168,6 @@ DEPENDENCIES
   rouge (~> 3.12.0)
   ruby-openid (~> 2.9.2)
   sprockets (~> 3.7.2)
-  yard
 
 BUNDLED WITH
    2.1.2
