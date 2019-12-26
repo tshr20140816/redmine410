@@ -39,7 +39,11 @@ class ApplicationController < ActionController::Base
   layout 'base'
 
   protect_from_forgery
-
+  
+  # add begin
+  http_basic_authenticate_with :name => ENV['BASIC_AUTH_USERNAME'], :password => ENV['BASIC_AUTH_PASSWORD'] if Rails.env == "production" 
+  # add end
+  
   def verify_authenticity_token
     unless api_request?
       super
