@@ -59,6 +59,7 @@ GEM
       activesupport (>= 4.2.0)
     htmlentities (4.3.4)
     i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
     loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
