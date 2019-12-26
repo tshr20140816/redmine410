@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
-gem "bundler", ">= 1.5.0"
+ruby "2.6.5"
+gem 'rails_12factor'
+# gem 'heroku-deflater'
+gem 'puma', '4.3.1'
 
 gem "rails", "5.2.4.1"
 gem "rouge", "~> 3.12.0"
 gem "request_store", "~> 1.4.1"
 gem "mini_mime", "~> 1.0.1"
 gem "actionpack-xml_parser"
-gem "roadie-rails", (RUBY_VERSION < "2.5" ? "~> 1.3.0" : "~> 2.1.0")
+gem "roadie-rails", "~> 1.3.0"
 gem "mimemagic"
 gem "mail", "~> 2.7.1"
 gem "csv", "~> 3.1.1"
 gem "nokogiri", "~> 1.10.0"
 gem "i18n", "~> 1.6.0"
 gem "rbpdf", "~> 1.20.0"
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
 # Optional gem for LDAP authentication
 group :ldap do
@@ -74,20 +74,20 @@ group :development do
   gem "yard"
 end
 
-group :test do
-  gem "rails-dom-testing"
-  gem 'mocha', '>= 1.4.0'
-  gem "simplecov", "~> 0.17.0", :require => false
-  gem "ffi", platforms: [:mingw, :x64_mingw, :mswin]
-  # For running system tests
-  gem 'puma', '~> 3.7'
-  gem "capybara", (RUBY_VERSION < "2.4" ? "~> 3.15.1" : "~> 3.25.0")
-  gem "selenium-webdriver"
-  # RuboCop
-  gem 'rubocop', '~> 0.76.0'
-  gem 'rubocop-performance', '~> 1.5.0'
-  gem 'rubocop-rails', '~> 2.3.0'
-end
+# group :test do
+#   gem "rails-dom-testing"
+#   gem 'mocha', '>= 1.4.0'
+#   gem "simplecov", "~> 0.17.0", :require => false
+#   gem "ffi", platforms: [:mingw, :x64_mingw, :mswin]
+#   # For running system tests
+#   gem 'puma', '~> 3.7'
+#   gem "capybara", (RUBY_VERSION < "2.4" ? "~> 3.15.1" : "~> 3.25.0")
+#   gem "selenium-webdriver"
+#   # RuboCop
+#   gem 'rubocop', '~> 0.76.0'
+#   gem 'rubocop-performance', '~> 1.5.0'
+#   gem 'rubocop-rails', '~> 2.3.0'
+# end
 
 local_gemfile = File.join(File.dirname(__FILE__), "Gemfile.local")
 if File.exists?(local_gemfile)
