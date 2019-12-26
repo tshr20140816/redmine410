@@ -70,9 +70,9 @@ else
   warn("Please configure your config/database.yml first")
 end
 
-group :development do
-  gem "yard"
-end
+# group :development do
+#   gem "yard"
+# end
 
 # group :test do
 #   gem "rails-dom-testing"
