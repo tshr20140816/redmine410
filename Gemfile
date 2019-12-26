@@ -14,7 +14,7 @@ gem "roadie-rails", "~> 1.3.0"
 gem "mimemagic"
 gem "mail", "~> 2.7.1"
 gem "csv", "~> 3.1.1"
-gem "nokogiri", "~> 1.10.0"
+gem "nokogiri", "~> 1.10.4"
 gem "i18n", "~> 1.6.0"
 gem "rbpdf", "~> 1.20.0"
 
