@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby "2.6.5"
 gem 'rails_12factor'
 # gem 'heroku-deflater'
-gem 'puma', '4.3.1'
+gem 'puma', '4.3.3'
 
 gem "rails", "5.2.4.1"
 gem "rouge", "~> 3.12.0"
